@@ -250,6 +250,7 @@ public class Producto {
      *
      * @param pCantidad Cantidad de unidades a vender. pCantidad > 0.
      * @return Cantidad que realmente fue vendida, según la disponibilidad en la bodega.
+     *
      */
     public int vender(int pCantidad) {
         int cantidadVendida = 0;
@@ -262,6 +263,7 @@ public class Producto {
         }else {
             cantidadVendida = cantidadBodega;
             this.cantidadBodega = 0;
+
 
         }
 
