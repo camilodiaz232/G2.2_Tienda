@@ -209,7 +209,7 @@ public class Producto {
      */
     public double calcularPrecioFinal() {
         // TODO: Calcular el valor unitario final con el IVA incluido.
-        return darValorUnitario()*darIVA();
+        return darValorUnitario()*(1+darIVA());
     }
 
     /**
@@ -260,6 +260,7 @@ public class Producto {
         if (darCantidadBodega()>pCantidad){
             this.cantidadBodega = cantidadBodega-pCantidad;
             cantidadVendida = pCantidad;
+
         }else {
             cantidadVendida = cantidadBodega;
             this.cantidadBodega = 0;
@@ -267,6 +268,7 @@ public class Producto {
 
         }
 
+        cantidadUnidadesVendidas = darCantidadUnidadesVendidas()+cantidadVendida;
         return cantidadVendida;
     }
 

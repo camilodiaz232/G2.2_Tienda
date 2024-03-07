@@ -1,10 +1,10 @@
 /**
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Universidad Ean (Bogotá - Colombia)
- * Programa de Ingeniería de Sistemas
+ * Universidad Ean (Bogotï¿½ - Colombia)
+ * Programa de Ingenierï¿½a de Sistemas
  * Licenciado bajo el esquema Academic Free License version 2.1
  * <p>
- * Desarrollo de Software - Guía 2 - Actividad 2
+ * Desarrollo de Software - Guï¿½a 2 - Actividad 2
  * Ejercicio: tienda
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 import javax.swing.border.TitledBorder;
 
 /**
- * Panel con la imagen de la aplicación.
+ * Panel con la imagen de la aplicaciï¿½n.
  */
 @SuppressWarnings("serial")
 public class PanelImagen extends JPanel {
@@ -28,7 +28,7 @@ public class PanelImagen extends JPanel {
     // ------------------------------------------------------------
 
     /**
-     * Etiqueta con la imagen de título de la tienda de juegos de celular.
+     * Etiqueta con la imagen de tï¿½tulo de la tienda de juegos de celular.
      */
     private JLabel lblImagen;
 
@@ -42,7 +42,7 @@ public class PanelImagen extends JPanel {
     public PanelImagen() {
         setLayout(new BorderLayout());
 
-        ImageIcon icono = new ImageIcon("./data/imagenes/Encabezado.png");
+        ImageIcon icono = new ImageIcon("./Tienda/data/imagenes/Encabezado.png");
         lblImagen = new JLabel("");
 
         lblImagen.setIcon(icono);
